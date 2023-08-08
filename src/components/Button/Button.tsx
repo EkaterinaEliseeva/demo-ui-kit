@@ -34,7 +34,7 @@ const StyledButton = styled.button<ButtonProps>`
   }
 `;
 
-const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   size,
   primary,
   disabled,
@@ -55,5 +55,3 @@ const Button: React.FC<ButtonProps> = ({
     </StyledButton>
   );
 };
-
-export default Button;

@@ -1,7 +1,7 @@
 import React from "react";
 import { StoryObj, Meta } from "@storybook/react";
 
-import RuleElement from "./RuleElement";
+import { RuleElement } from "./RuleElement";
 import { RULES_DATA } from "./Rules.data";
 
 const meta: Meta<typeof RuleElement> = {

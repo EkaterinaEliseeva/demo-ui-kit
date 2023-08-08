@@ -1,11 +1,11 @@
 {
-  "name": "@fczs/demo-ui-kit",
-  "version": "0.1.0",
+  "name": "@realfczs/demo-ui-kit",
+  "version": "0.1.3",
   "description": "React UI component demo library: React, Typescript, Tailwind, Rollup, Storybook, Jest.",
   "repository": "https://github.com/fczs/demo-ui-kit",
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/types.d.ts",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "rollup -c --bundleConfigAsCjs",
@@ -22,7 +22,6 @@
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.5",
-    "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.0",

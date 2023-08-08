@@ -39,7 +39,7 @@ const StyledText = styled.p<InputProps>`
     props.disabled ? "#e4e3ea" : props.error ? "#a9150b" : "#080808"};
 `;
 
-const Input: FC<InputProps> = ({
+export const Input: FC<InputProps> = ({
   id,
   disabled,
   label,
@@ -65,12 +65,11 @@ const Input: FC<InputProps> = ({
         error={error}
         success={success}
         placeholder={placeholder}
-        {...props}></StyledInput>
+        {...props}
+      ></StyledInput>
       <StyledMessage>
         <StyledText error={error}>{message}</StyledText>
       </StyledMessage>
     </Fragment>
   );
 };
-
-export default Input;

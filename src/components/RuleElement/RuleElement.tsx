@@ -9,7 +9,7 @@ export type TRulesElementProps = {
   onClick: () => void;
 };
 
-const RuleElement: React.FC<TRulesElementProps> = ({
+export const RuleElement: React.FC<TRulesElementProps> = ({
   children,
   text,
   color,
@@ -30,5 +30,3 @@ const RuleElement: React.FC<TRulesElementProps> = ({
     </div>
   );
 };
-
-export default RuleElement;

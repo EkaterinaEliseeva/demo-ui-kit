@@ -1,14 +1,14 @@
-/// <reference types="react" />
+import React from "react";
 export declare const RULES_DATA: ({
     value: string;
     text: string;
-    icon: JSX.Element;
+    icon: React.JSX.Element;
     color: string;
     disabled?: undefined;
 } | {
     value: string;
     text: string;
-    icon: JSX.Element;
+    icon: React.JSX.Element;
     color: string;
     disabled: boolean;
 })[];
