@@ -1,0 +1,41 @@
+import React from "react";
+import { StoryObj, Meta } from "@storybook/react";
+
+import RuleElement from "./RuleElement";
+import { RULES_DATA } from "./Rules.data";
+
+const meta: Meta<typeof RuleElement> = {
+  component: RuleElement,
+};
+
+export default meta;
+
+type Story = StoryObj<typeof RuleElement>;
+
+export const AlwaysPairsWith: Story = {
+  args: {
+    text: RULES_DATA[0].text,
+    color: RULES_DATA[0].color,
+    onClick: () => {},
+    disabled: false,
+    children: (
+      <svg
+        width="24"
+        height="24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#a)" stroke="#169DFF" stroke-width="1.5">
+          <path d="m18.75.75 4.5 4.5-4.5 4.5" />
+          <path d="m23.25 5.25-13.688.188s-8.437-.188-8.437 7.687M5.625 23.25l-4.5-4.5 4.5-4.5" />
+          <path d="m1.125 18.75 13.688-.188s8.437.188 8.437-7.687M9 12.107l2.182 2.143L15 10.5" />
+        </g>
+        <defs>
+          <clipPath id="a">
+            <path fill="#fff" d="M0 0h24v24H0z" />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+  },
+};
