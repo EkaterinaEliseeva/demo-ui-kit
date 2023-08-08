@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
-import classNames from "../../utils/classNames";
+import React, { ReactNode } from 'react';
+import classNames from '../../utils/classNames';
 
 export type TRulesElementProps = {
   text: string;
@@ -19,8 +19,8 @@ export const RuleElement: React.FC<TRulesElementProps> = ({
   return (
     <div
       className={classNames(
-        "flex items-center max-w-fit border select-none rounded-lg px-3 py-2",
-        disabled ? "opacity-50 pointer-events-none cursor-not-allowed" : "",
+        'flex items-center max-w-fit border select-none rounded-lg px-3 py-2',
+        disabled ? 'opacity-50 pointer-events-none cursor-not-allowed' : '',
         color
       )}
       onClick={onClick}

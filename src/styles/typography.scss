@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply m-0;
+}
+
+h1,
+h2 {
+  @apply font-medium;
+}
+
+h1 {
+  @apply font-main leading-h1 tracking-[-0.03em] text-[74px] sm:leading-none;
+}
+
+h2 {
+  @apply font-main leading-h2 tracking-[-0.02em] text-[44px] sm:leading-h1;
+}
+
+h3 {
+  @apply font-main leading-sm font-medium text-[32px];
+}
+
+h4 {
+  @apply font-main leading-sm tracking-[-0.22px] font-medium text-[22px];
+}
+
+h5 {
+  @apply font-secondary text-[15px] leading-regular;
+}
+
+h6 {
+  @apply text-10 leading-sm tracking-[0.2px] font-normal;
+}
+
+.common-text {
+  @apply text-[14px] leading-regular;
+}

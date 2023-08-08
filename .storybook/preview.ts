@@ -1,5 +1,8 @@
 import type { Preview } from "@storybook/react";
 
+import '!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css';
+import '../src/styles/globals.scss';
+
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
