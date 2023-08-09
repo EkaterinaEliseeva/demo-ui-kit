@@ -8,5 +8,5 @@ type TModalContentProps = {
 };
 
 export default function ModalContent({ children, className }: TModalContentProps) {
-  return <div className={classNames('rounded-lg border-1 border-solid border-gray-300', className)}>{children}</div>;
+  return <div className={classNames('rounded-lg border-1 border-solid border-gray/ui-300', className)}>{children}</div>;
 }

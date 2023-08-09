@@ -10,15 +10,15 @@ module.exports = {
   ],
   theme: {
     colors: {
-      transparent: 'transparent',
-      white: '#ffffff',
+      'transparent': 'transparent',
+      'white': '#ffffff',
       'gray/90': 'rgba(18, 18, 18, 0.9)',
       'gray/60': 'rgba(18, 18, 18, 0.6)',
       'gray/35': 'rgba(18, 18, 18, 0.35)',
       'gray/10': 'rgba(18, 18, 18, 0.1)',
       'gray/5': 'rgba(18, 18, 18, 0.05)',
       'gray/5c': '#5c5c5c',
-      gray: {
+      'gray/ui': {
         DEFAULT: '#191919',
         900: '#232323',
         800: '#353535',
@@ -93,7 +93,7 @@ module.exports = {
         absolute: 'left, right, top, bottom',
       },
       backgroundImage: {
-        checkbox: `url('../../src/resources/icons/tick.svg')`,
+        checkbox: 'url(\'../../src/resources/icons/tick.svg\')',
       },
       height: {
         13: '3.25rem',

@@ -30,7 +30,7 @@ const Modal = ({ isShown, children, setIsShown }: TModalProps) => {
       {isShown && (
         <div
           className={
-            'flex items-center justify-center bg-gray bg-opacity-80 relative w-full min-h-full overflow-hidden'
+            'flex items-center justify-center bg-gray/ui bg-opacity-80 relative w-full min-h-full overflow-hidden'
           }
           ref={overlayRef}
           onClick={closeModalByClick}

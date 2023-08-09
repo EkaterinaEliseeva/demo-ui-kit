@@ -20,4 +20,4 @@ export declare const buttonSizes: {
     lg: string;
     wide: string;
 };
-export declare const buttonGroupContainerStyle = "ml-2 flex border-1 border-gray h-9 p-[3px] gap-[3px] rounded-lg items-center justify-center";
+export declare const buttonGroupContainerStyle = "ml-2 flex border-1 border-gray/ui h-9 p-[3px] gap-[3px] rounded-lg items-center justify-center";
