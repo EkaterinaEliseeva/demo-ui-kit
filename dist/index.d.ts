@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 type TRulesElementProps = {
     text: string;
-    color: string;
+    color: 'bg-blue-blue/5';
     disabled?: boolean;
     children: ReactNode;
     onClick: () => void;
