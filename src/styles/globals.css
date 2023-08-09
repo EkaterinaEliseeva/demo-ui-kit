@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './fonts.scss';
-@import './typography.scss';
+@import 'fonts.css';
+@import 'typography.css';
 
 body {
   @apply font-secondary text-gray leading-regular h-full box-border text-sm;
