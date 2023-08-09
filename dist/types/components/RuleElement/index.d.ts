@@ -1,1 +1,1 @@
-export * from "./RuleElement";
+export * from './RuleElement';

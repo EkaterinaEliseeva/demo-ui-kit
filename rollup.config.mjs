@@ -4,12 +4,10 @@ import dts from 'rollup-plugin-dts';
 import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
-import tailwindcss from "tailwindcss";
+import alias from '@rollup/plugin-alias';
 
 import packageJson from './package.json';
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
- const tailwindConfig = require('./tailwind.config.js');
+
 export default [
   {
     input: 'src/index.ts',
@@ -21,6 +19,9 @@ export default [
       },
     ],
     plugins: [
+      alias({
+        entries: { find: '@/', replacement: './src/' },
+      }),
       postcss({
         config: {
           path: './postcss.config.js',
@@ -29,7 +30,7 @@ export default [
         minimize: true,
         inject: {
           insertAt: 'top',
-        }
+        },
       }),
       peerDepsExternal(),
       resolve(),
@@ -41,7 +42,12 @@ export default [
   {
     input: 'src/index.ts',
     output: [{ file: packageJson.types, format: 'es' }],
-    plugins: [dts.default()],
+    plugins: [
+      alias({
+        entries: { find: '@/', replacement: './src/' },
+      }),
+      dts.default(),
+    ],
     external: [/\.css$/],
   },
 ];

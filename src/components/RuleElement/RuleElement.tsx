@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import classNames from '../../utils/classNames';
+import classNames from '@/utils/classNames';
 
 export type TRulesElementProps = {
   text: string;
