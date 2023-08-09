@@ -1,6 +1,6 @@
 {
   "name": "@elkate/demo-ui-kit",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "React UI component demo library: React, Typescript, Tailwind, Rollup, Storybook, Jest.",
   "repository": "https://github.com/elkate/demo-ui-kit",
   "main": "dist/cjs/index.js",
