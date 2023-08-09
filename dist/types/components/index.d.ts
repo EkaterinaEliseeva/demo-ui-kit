@@ -1,3 +1,1 @@
-export * from "./Button";
-export * from "./Input";
-export * from "./RuleElement";
+export * from './RuleElement';
