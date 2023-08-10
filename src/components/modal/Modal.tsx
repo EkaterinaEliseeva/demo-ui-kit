@@ -2,7 +2,7 @@ import React, { ReactNode, useRef } from 'react';
 import classNames from '@/utils/classNames';
 import { IconClose } from '@/components/icon';
 import { buttonSizes, buttonTypes } from '@/components/buttons/button-styles/button-styles.config';
-import ModalContent from '@/components/Modal/components/ModalContent';
+import ModalContent from '@/components/modal/components/ModalContent';
 
 export type TModalProps = {
   isShown: boolean;
@@ -30,7 +30,7 @@ const Modal = ({ isShown, children, setIsShown }: TModalProps) => {
       {isShown && (
         <div
           className={
-            'flex items-center justify-center bg-gray/ui bg-opacity-80 relative w-full min-h-full overflow-hidden'
+            'flex items-center justify-center bg-gray-ui bg-opacity-80 relative w-full min-h-full overflow-hidden'
           }
           ref={overlayRef}
           onClick={closeModalByClick}

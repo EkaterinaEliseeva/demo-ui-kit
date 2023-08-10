@@ -3,13 +3,13 @@ import classNames from '@/utils/classNames';
 
 export type TRulesElementProps = {
   text: string;
-  color: 'bg-blue-blue/5';
+  color: string;
   disabled?: boolean;
   children: ReactNode;
   onClick: () => void;
 };
 
-export const RuleElement: React.FC<TRulesElementProps> = ({
+export const Rule: React.FC<TRulesElementProps> = ({
   children,
   text,
   color,
@@ -19,7 +19,7 @@ export const RuleElement: React.FC<TRulesElementProps> = ({
   return (
     <div
       className={classNames(
-        'flex items-center max-w-fit border select-none rounded-lg px-3 py-2',
+        'flex items-center max-w-fit select-none rounded-lg px-3 py-2',
         disabled ? 'opacity-50 pointer-events-none cursor-not-allowed' : '',
         color
       )}

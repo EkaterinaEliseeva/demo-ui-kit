@@ -5,8 +5,10 @@ import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import alias from '@rollup/plugin-alias';
+import image from '@rollup/plugin-image';
 
 import packageJson from './package.json';
+import * as path from 'path';
 
 export default [
   {
@@ -20,7 +22,7 @@ export default [
     ],
     plugins: [
       alias({
-        entries: { find: '@/', replacement: './src/' },
+        entries: { '@': path.resolve(__dirname, './src') },
       }),
       postcss({
         config: {
@@ -35,6 +37,7 @@ export default [
       peerDepsExternal(),
       resolve(),
       typescript({ tsconfig: './tsconfig.json' }),
+      image(),
       terser(),
     ],
     external: ['react', 'react-dom'],
@@ -44,7 +47,7 @@ export default [
     output: [{ file: packageJson.types, format: 'es' }],
     plugins: [
       alias({
-        entries: { find: '@/', replacement: './src/' },
+        entries: { '@': path.resolve(__dirname, './src') },
       }),
       dts.default(),
     ],

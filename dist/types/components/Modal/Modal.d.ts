@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import ModalContent from '@/components/Modal/components/ModalContent';
+import ModalContent from '@/components/modal/components/ModalContent';
 export type TModalProps = {
     isShown: boolean;
     setIsShown: (isShown: boolean) => void;

@@ -13,29 +13,29 @@ h2 {
 }
 
 h1 {
-  @apply font-main leading-h1 tracking-[-0.03em] text-[74px] sm:leading-none;
+  @apply font-main leading-h1-ui tracking-[-0.03em] text-[74px] sm:leading-none;
 }
 
 h2 {
-  @apply font-main leading-h2 tracking-[-0.02em] text-[44px] sm:leading-h1;
+  @apply font-main leading-h2-ui tracking-[-0.02em] text-[44px] sm:leading-h1-ui;
 }
 
 h3 {
-  @apply font-main leading-sm font-medium text-[32px];
+  @apply font-main leading-sm-ui font-medium text-[32px];
 }
 
 h4 {
-  @apply font-main leading-sm tracking-[-0.22px] font-medium text-[22px];
+  @apply font-main leading-sm-ui tracking-[-0.22px] font-medium text-[22px];
 }
 
 h5 {
-  @apply font-secondary text-[15px] leading-regular;
+  @apply font-secondary text-[15px] leading-regular-ui;
 }
 
 h6 {
-  @apply text-10 leading-sm tracking-[0.2px] font-normal;
+  @apply text-10 leading-sm-ui tracking-[0.2px] font-normal;
 }
 
 .common-text {
-  @apply text-[14px] leading-regular;
+  @apply text-[14px] leading-regular-ui;
 }

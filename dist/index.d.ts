@@ -1,14 +1,19 @@
-import React, { ReactNode } from 'react';
-import ModalContent from '@/components/Modal/components/ModalContent';
+import React, { ReactNode, ReactElement } from 'react';
 
 type TRulesElementProps = {
     text: string;
-    color: 'bg-blue-blue/5';
+    color: string;
     disabled?: boolean;
     children: ReactNode;
     onClick: () => void;
 };
-declare const RuleElement: React.FC<TRulesElementProps>;
+declare const Rule: React.FC<TRulesElementProps>;
+
+type TModalContentProps = {
+    children: ReactElement;
+    className: string;
+};
+declare function ModalContent({ children, className }: TModalContentProps): React.JSX.Element;
 
 type TModalProps = {
     isShown: boolean;
@@ -20,4 +25,34 @@ declare const Modal: {
     Content: typeof ModalContent;
 };
 
-export { Modal, RuleElement, TModalProps, TRulesElementProps };
+type TAccordionItemProps = {
+    children: ReactNode;
+    title: ReactNode;
+    details?: string;
+    opened?: boolean;
+};
+declare function AccordionItem({ children, title, details, opened }: TAccordionItemProps): React.JSX.Element;
+
+type TAccordionProps = {
+    children: ReactElement[];
+    className?: string;
+};
+declare function Accordion({ children, className }: TAccordionProps): React.JSX.Element;
+declare namespace Accordion {
+    var Item: typeof AccordionItem;
+}
+
+type TIconProps = {
+    className?: string;
+    theme?: 'light' | 'dark';
+};
+
+declare function IconAccordion({ className, theme }: TIconProps): React.JSX.Element;
+
+declare function IconClose({ className, theme }: TIconProps): React.JSX.Element;
+
+declare function IconMinus({ className, theme }: TIconProps): React.JSX.Element;
+
+declare function IconPlus({ className, theme }: TIconProps): React.JSX.Element;
+
+export { Accordion, IconAccordion, IconClose, IconMinus, IconPlus, Modal, Rule, TModalProps, TRulesElementProps };
