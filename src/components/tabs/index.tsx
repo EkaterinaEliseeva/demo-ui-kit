@@ -4,7 +4,7 @@ import classNames from '@/utils/classNames';
 import Tab from '@/components/tabs/components/Tab';
 import { TTabDataElement } from '@/components/tabs/types/TTabDataElement';
 
-type TTabsProps = {
+export type TTabsProps = {
   tabsData: TTabDataElement[];
 };
 

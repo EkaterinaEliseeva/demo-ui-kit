@@ -3,7 +3,7 @@ import React, { ReactNode, useRef } from 'react';
 import useAccordion from '@/components/accordion/hooks/useAccordion';
 import AccordionToggler from '@/components/accordion/components/AccordionToggler';
 
-type TAccordionItemProps = {
+export type TAccordionItemProps = {
   children: ReactNode;
   title: ReactNode;
   details?: string;

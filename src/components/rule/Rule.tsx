@@ -9,13 +9,7 @@ export type TRulesElementProps = {
   onClick: () => void;
 };
 
-export const Rule: React.FC<TRulesElementProps> = ({
-  children,
-  text,
-  color,
-  onClick,
-  disabled,
-}: TRulesElementProps) => {
+export default function Rule({ children, text, color, onClick, disabled }: TRulesElementProps) {
   return (
     <div
       className={classNames(
@@ -29,4 +23,4 @@ export const Rule: React.FC<TRulesElementProps> = ({
       <div className="pl-2.5 pr-3.5">{text}</div>
     </div>
   );
-};
+}

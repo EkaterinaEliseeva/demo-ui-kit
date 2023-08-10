@@ -7,7 +7,7 @@ import DropdownContext from '@/components/dropdown/context/DropdownContext';
 import { TDropdownOption } from '@/components/dropdown/types/TDropdownOption';
 import DropdownNestedMenu from '@/components/dropdown/components/DropdownMenu';
 
-type TDropdownMenuSectionProps = {
+export type TDropdownMenuSectionProps = {
   options: TDropdownOption[];
 };
 

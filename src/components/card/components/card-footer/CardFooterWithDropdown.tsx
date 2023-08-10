@@ -4,7 +4,7 @@ import Button from '@/components/buttons/button';
 import OverflowIcon from '@/resources/icons/overflow.svg';
 import { buttonSizesEnum, buttonTypesEnum } from '@/components/buttons/types/button-styles.enum';
 
-type TCardFooterWithDropdownProps = {
+export type TCardFooterWithDropdownProps = {
   name: string;
 };
 

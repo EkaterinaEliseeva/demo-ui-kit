@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import { IconAccordion } from '@/components/icon';
 import classNames from '@/utils/classNames';
 
-type TAccordionTogglerProps = {
+export type TAccordionTogglerProps = {
   isOpened: boolean;
   children: ReactNode;
   toggleAccordion: () => void;

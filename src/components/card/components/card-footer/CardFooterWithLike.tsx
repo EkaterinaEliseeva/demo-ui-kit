@@ -4,7 +4,7 @@ import Button from '@/components/buttons/button';
 import LikeIcon from '@/resources/icons/like.svg';
 import { buttonSizesEnum, buttonTypesEnum } from '@/components/buttons/types/button-styles.enum';
 
-type TCardFooterWithLikeProps = {
+export type TCardFooterWithLikeProps = {
   name: string;
   offer: ReactNode;
   likeAction: () => void;

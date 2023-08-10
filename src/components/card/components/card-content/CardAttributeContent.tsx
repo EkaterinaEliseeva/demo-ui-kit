@@ -4,7 +4,7 @@ import transparentBg from '@/resources/icons/transparent-bg.png';
 import TextIcon from '@/resources/icons/text-icon.svg';
 import classNames from '@/utils/classNames';
 
-type TCardAttributeContentProps = {
+export type TCardAttributeContentProps = {
   children?: ReactNode;
 };
 

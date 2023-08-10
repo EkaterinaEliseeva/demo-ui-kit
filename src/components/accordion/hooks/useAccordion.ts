@@ -1,6 +1,6 @@
 import { MutableRefObject, useEffect, useState } from 'react';
 
-type useAccordionProps = {
+export type useAccordionProps = {
   accordionContentRef: MutableRefObject<HTMLDivElement | null>;
   opened: boolean;
 };

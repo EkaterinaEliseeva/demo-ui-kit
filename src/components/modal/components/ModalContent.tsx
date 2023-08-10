@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 
 import classNames from '@/utils/classNames';
 
-type TModalContentProps = {
+export type TModalContentProps = {
   children: ReactElement;
   className: string;
 };

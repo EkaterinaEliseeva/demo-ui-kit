@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 
 import AccordionItem from '@/components/accordion/components/AccordionItem';
 
-type TAccordionProps = {
+export type TAccordionProps = {
   children: ReactElement[];
   className?: string;
 };

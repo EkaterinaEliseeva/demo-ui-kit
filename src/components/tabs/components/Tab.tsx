@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 import classNames from '@/utils/classNames';
 
-type TTabProps = {
+export type TTabProps = {
   id: number;
   children: ReactNode;
   action: (id: number) => void;

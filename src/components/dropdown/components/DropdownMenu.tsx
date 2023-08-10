@@ -5,7 +5,7 @@ import DropdownContext from '@/components/dropdown/context/DropdownContext';
 import { TDropdownOption } from '@/components/dropdown/types/TDropdownOption';
 import DropdownMenuSection from '@/components/dropdown/components/DropdownMenuSection';
 
-type TDropdownMenuProps = {
+export type TDropdownMenuProps = {
   options: TDropdownOption[];
 };
 

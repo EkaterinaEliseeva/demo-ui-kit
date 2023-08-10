@@ -8,7 +8,7 @@ import DropdownContext from '@/components/dropdown/context/DropdownContext';
 import DropdownMenuSection from '@/components/dropdown/components/DropdownMenuSection';
 import { buttonSizesEnum, buttonTypesEnum } from '@/components/buttons/types/button-styles.enum';
 
-type TDropdownProps = {
+export type TDropdownProps = {
   theme?: 'dark' | 'light';
   menuPosition: 'top' | 'bottom';
   children: ReactNode;

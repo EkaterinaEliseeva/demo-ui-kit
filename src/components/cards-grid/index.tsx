@@ -2,7 +2,7 @@ import React, { ReactNode, useEffect, useRef, useState } from 'react';
 
 import useResize from '@/hooks/useResize';
 
-type TCardsGridProps = {
+export type TCardsGridProps = {
   children: ReactNode;
   cardsWidth: number;
   gap: number;

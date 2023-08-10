@@ -5,7 +5,7 @@ import RangeMod from '@/components/input/range-mod';
 import OverflowIcon from '@/resources/icons/overflow.svg';
 import { buttonSizesEnum, buttonTypesEnum } from '@/components/buttons/types/button-styles.enum';
 
-type TCardFooterWithRangeProps = {
+export type TCardFooterWithRangeProps = {
   name: string;
   details: string;
   rangeAction: (value: number) => void;

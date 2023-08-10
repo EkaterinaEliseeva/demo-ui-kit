@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import classNames from '@/utils/classNames';
 
-type TContainerProps = {
+export type TContainerProps = {
   children: ReactElement;
   className: string;
 };
