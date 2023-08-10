@@ -1,5 +1,5 @@
 import { MutableRefObject } from 'react';
-type useAccordionProps = {
+export type useAccordionProps = {
     accordionContentRef: MutableRefObject<HTMLDivElement | null>;
     opened: boolean;
 };
@@ -8,4 +8,3 @@ export default function useAccordion({ accordionContentRef, opened }: useAccordi
     isOpened: boolean;
     toggleAccordion: () => void;
 };
-export {};

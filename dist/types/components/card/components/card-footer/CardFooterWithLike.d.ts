@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-type TCardFooterWithLikeProps = {
+export type TCardFooterWithLikeProps = {
     name: string;
     offer: ReactNode;
     likeAction: () => void;
@@ -7,4 +7,3 @@ type TCardFooterWithLikeProps = {
     likesCount: number;
 };
 export default function CardFooterWithLike({ name, offer, likeAction, isLiked, likesCount }: TCardFooterWithLikeProps): React.JSX.Element;
-export {};

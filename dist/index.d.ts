@@ -7,7 +7,6 @@ type TRulesElementProps = {
     children: ReactNode;
     onClick: () => void;
 };
-declare const Rule: React.FC<TRulesElementProps>;
 
 type TModalContentProps = {
     children: ReactElement;
@@ -55,4 +54,29 @@ declare function IconMinus({ className, theme }: TIconProps): React.JSX.Element;
 
 declare function IconPlus({ className, theme }: TIconProps): React.JSX.Element;
 
-export { Accordion, IconAccordion, IconClose, IconMinus, IconPlus, Modal, Rule, TModalProps, TRulesElementProps };
+type TCardsGridProps = {
+    children: ReactNode;
+    cardsWidth: number;
+    gap: number;
+};
+
+type TContainerProps = {
+    children: ReactElement;
+    className: string;
+};
+
+type TDropdownProps = {
+    theme?: 'dark' | 'light';
+    menuPosition: 'top' | 'bottom';
+    children: ReactNode;
+};
+
+type TTabDataElement = {
+    title: string;
+};
+
+type TTabsProps = {
+    tabsData: TTabDataElement[];
+};
+
+export { Accordion, IconAccordion, IconClose, IconMinus, IconPlus, Modal, TAccordionProps, TCardsGridProps, TContainerProps, TDropdownProps, TModalProps, TRulesElementProps, TTabsProps };

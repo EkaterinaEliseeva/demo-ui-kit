@@ -6,4 +6,4 @@ export type TRulesElementProps = {
     children: ReactNode;
     onClick: () => void;
 };
-export declare const Rule: React.FC<TRulesElementProps>;
+export default function Rule({ children, text, color, onClick, disabled }: TRulesElementProps): React.JSX.Element;

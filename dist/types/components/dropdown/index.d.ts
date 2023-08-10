@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import DropdownMenuSection from '@/components/dropdown/components/DropdownMenuSection';
-type TDropdownProps = {
+export type TDropdownProps = {
     theme?: 'dark' | 'light';
     menuPosition: 'top' | 'bottom';
     children: ReactNode;

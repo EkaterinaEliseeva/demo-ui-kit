@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
-type TCardContentProps = {
+export type TCardContentProps = {
     children: ReactNode;
 };
 export default function CardContent({ children }: TCardContentProps): React.JSX.Element;
-export {};
