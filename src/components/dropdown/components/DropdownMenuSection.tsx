@@ -45,7 +45,7 @@ export default function DropdownMenuSection({ options }: TDropdownMenuSectionPro
           <div
             className={classNames(
               'transition-all flex items-center cursor-pointer duration-std px-4 py-2',
-              theme === 'light' ? 'hover:bg-gray-ui/10' : 'hover:bg-gray-100/10'
+              theme === 'light' ? 'hover:bg-gray-ui/10' : 'hover:bg-gray-ui-100/10'
             )}
             style={{ color: option.textColor }}
             onClick={() => handleMenuItemClick(index)}
@@ -54,7 +54,7 @@ export default function DropdownMenuSection({ options }: TDropdownMenuSectionPro
               <option.icon
                 className={classNames(
                   theme === 'dark' && !option.textColor
-                    ? '[&>path]:fill-gray-100 group-disabled:[&>path]:fill-gray-700'
+                    ? '[&>path]:fill-gray-ui-100 group-disabled:[&>path]:fill-gray-ui-700'
                     : '',
                   'mr-2'
                 )}
@@ -67,7 +67,7 @@ export default function DropdownMenuSection({ options }: TDropdownMenuSectionPro
                   'block ml-auto transition-all',
                   nestedMenuIndex === index ? 'rotate-180' : '',
                   theme === 'dark'
-                    ? '[&>path]:fill-transparent [&>path]:stroke-white group-disabled:[&>path]:fill-gray-700'
+                    ? '[&>path]:fill-transparent [&>path]:stroke-white group-disabled:[&>path]:fill-gray-ui-700'
                     : ''
                 )}
               />

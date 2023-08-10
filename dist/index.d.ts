@@ -7,6 +7,7 @@ type TRulesElementProps = {
     children: ReactNode;
     onClick: () => void;
 };
+declare const Rule: React.FC<TRulesElementProps>;
 
 type TModalContentProps = {
     children: ReactElement;
@@ -79,4 +80,4 @@ type TTabsProps = {
     tabsData: TTabDataElement[];
 };
 
-export { Accordion, IconAccordion, IconClose, IconMinus, IconPlus, Modal, TAccordionProps, TCardsGridProps, TContainerProps, TDropdownProps, TModalProps, TRulesElementProps, TTabsProps };
+export { Accordion, IconAccordion, IconClose, IconMinus, IconPlus, Modal, Rule, TAccordionProps, TCardsGridProps, TContainerProps, TDropdownProps, TModalProps, TRulesElementProps, TTabsProps };

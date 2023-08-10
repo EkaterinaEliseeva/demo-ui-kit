@@ -8,7 +8,14 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
-    '@storybook/addon-styling',
+    {
+      name: '@storybook/addon-styling',
+      options: {
+        postCss: {
+          implementation: require.resolve('postcss'),
+        },
+      },
+    },
   ],
   framework: "@storybook/react-webpack5",
   docs: {
@@ -30,38 +37,6 @@ const config: StorybookConfig = {
         '@': path.resolve(__dirname, '../src'),
       };
     }
-
-    config.module.rules.push({
-      test: /\.s(a|c)ss$/,
-      use: [
-        'style-loader',
-        {
-          loader: 'css-loader',
-          options: {
-            importLoaders: 1,
-            modules: {
-              auto: /(?<!variables)\.module\.scss$/, // true
-              localIdentName: '[name]__[local]--[hash:base64:5]',
-            },
-          },
-        },
-        {
-          loader: 'postcss-loader',
-          options: {
-            implementation: require('postcss'),
-            postcssOptions: {
-              config: path.resolve(__dirname, '../postcss.config.js'),
-            },
-          },
-        },
-        {
-          loader: 'sass-loader',
-          options: {
-            implementation: require('sass'),
-          },
-        },
-      ],
-    });
 
     const imageRule = config.module?.rules?.find(rule => {
       const test = (rule as { test: RegExp }).test;

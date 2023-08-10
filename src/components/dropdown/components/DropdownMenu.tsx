@@ -16,7 +16,7 @@ export default function DropdownMenu({ options }: TDropdownMenuProps) {
     <div
       className={classNames(
         '-left-px pt-2 absolute z-10 rounded-lg w-[calc(100%+2px)] border-solid  border-1-ui',
-        theme === 'light' ? 'bg-gray-100 border-gray' : 'bg-gray border-gray-ui/5c'
+        theme === 'light' ? 'bg-gray-ui-100 border-gray' : 'bg-gray border-gray-ui/5c'
       )}
     >
       <DropdownMenuSection options={options} />

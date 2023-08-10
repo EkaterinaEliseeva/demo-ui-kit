@@ -35,7 +35,7 @@ const RangeInc = (props: RangeProps) => {
           size={buttonSizesEnum.smSquareGroup}
           className={'group'}
         >
-          <IconMinus className={'group-disabled:after:bg-gray-700'} />
+          <IconMinus className={'group-disabled:after:bg-gray-ui-700'} />
         </Button>
         <Button
           onClick={changeValueInc}
@@ -44,7 +44,7 @@ const RangeInc = (props: RangeProps) => {
           size={buttonSizesEnum.smSquareGroup}
           className={'group'}
         >
-          <IconPlus className={'group-disabled:after:bg-gray-700 group-disabled:before:bg-gray-700'} />
+          <IconPlus className={'group-disabled:after:bg-gray-ui-700 group-disabled:before:bg-gray-ui-700'} />
         </Button>
       </div>
     </div>

@@ -48,7 +48,7 @@ const Radio = ({ disabled, size, className, id, theme = 'light', checked, onChan
         <div
           className={classNames(
             'absolute hidden peer-checked:block',
-            theme == 'light' ? 'bg-white peer-disabled:bg-gray' : 'bg-gray peer-disabled:bg-gray-100/60',
+            theme == 'light' ? 'bg-white peer-disabled:bg-gray' : 'bg-gray peer-disabled:bg-gray-ui-100/60',
             'rounded-full w-1 h-1 '
           )}
         ></div>

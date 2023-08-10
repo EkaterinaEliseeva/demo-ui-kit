@@ -38,7 +38,7 @@ const Dropdown = ({ theme = 'light', children, menuPosition }: TDropdownProps) =
         <OverflowIcon
           className={classNames(
             'h-4 w-4',
-            theme === 'dark' ? '[&>path]:fill-gray-100 group-disabled:[&>path]:fill-gray-700' : ''
+            theme === 'dark' ? '[&>path]:fill-gray-ui-100 group-disabled:[&>path]:fill-gray-ui-700' : ''
           )}
         />
       </Button>
@@ -47,7 +47,7 @@ const Dropdown = ({ theme = 'light', children, menuPosition }: TDropdownProps) =
           ref={menuRef}
           className={classNames(
             'absolute -right-1.5 border-1-ui w-full py-2 rounded-lg text-sm animate-menuShow z-50 max-w-[180px]',
-            theme === 'light' ? 'bg-gray-100 border-gray' : 'bg-gray border-gray-100/30'
+            theme === 'light' ? 'bg-gray-ui-100 border-gray' : 'bg-gray-ui border-gray-ui-100/30'
           )}
           style={{ [menuPosition === 'top' ? 'bottom' : 'top']: '29px' }}
         >

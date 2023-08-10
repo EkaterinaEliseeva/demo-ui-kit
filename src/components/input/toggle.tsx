@@ -23,7 +23,7 @@ const Toggle = ({ disabled, theme = 'light', onChange, id, className, checked }:
           toggleStyles[theme],
           'h-full w-full absolute',
           className ?? '',
-          'appearance-none peer z-10 disabled:pointer-events-none before:w-full before:h-full before:flex before:rounded-full before:-z-10 after:duration-100 after:transition-absolute after:absolute after:bg-gray-100 after:w-[14px] after:h-[14px] after:left-px after:rounded-full checked:after:left-[17px] focus:after:ring-[6px] hover:after:ring-[6px] after:bottom-px'
+          'appearance-none peer z-10 disabled:pointer-events-none before:w-full before:h-full before:flex before:rounded-full before:-z-10 after:duration-100 after:transition-absolute after:absolute after:bg-gray-ui-100 after:w-[14px] after:h-[14px] after:left-px after:rounded-full checked:after:left-[17px] focus:after:ring-[6px] hover:after:ring-[6px] after:bottom-px'
         )}
         disabled={disabled}
         onChange={onChange}

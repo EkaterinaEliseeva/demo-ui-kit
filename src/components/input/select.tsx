@@ -43,7 +43,7 @@ const Select = ({ options, onSelect, defaultValue, theme = 'light', size }: Sele
           showMenu ? 'ring-3 ring-inset' : '',
           theme === 'light'
             ? 'border-gray ring-gray-ui/35'
-            : `hover:bg-gray-100/5 border-gray-100/30 ring-gray-100/25 ${showMenu ? 'bg-gray-100/10' : ''}`
+            : `hover:bg-gray-ui-100/5 border-gray-ui-100/30 ring-gray-ui-100/25 ${showMenu ? 'bg-gray-ui-100/10' : ''}`
         )}
         onClick={handleInputClick}
       >
@@ -53,7 +53,7 @@ const Select = ({ options, onSelect, defaultValue, theme = 'light', size }: Sele
           <div
             className={classNames(
               'absolute top-full -left-px w-[calc(100%+2px)] border-1-ui rounded-lg text-sm animate-menuShow z-50',
-              theme == 'light' ? ' bg-white border-gray ' : 'bg-gray-900 border-gray-100/30'
+              theme == 'light' ? ' bg-white border-gray ' : 'bg-gray-ui-900 border-gray-ui-100/30'
             )}
           >
             {options.map(option => {
@@ -64,7 +64,7 @@ const Select = ({ options, onSelect, defaultValue, theme = 'light', size }: Sele
                     selectSize[size],
                     option.fieldColor ?? '',
                     'flex items-center transition-all duration-std px-4 py-2',
-                    theme == 'light' ? 'hover:bg-gray-ui/10' : 'hover:bg-gray-100/10'
+                    theme == 'light' ? 'hover:bg-gray-ui/10' : 'hover:bg-gray-ui-100/10'
                   )}
                   onClick={() => onItemClick(option)}
                 >
@@ -79,7 +79,7 @@ const Select = ({ options, onSelect, defaultValue, theme = 'light', size }: Sele
           className={classNames(
             'transition-all duration-std',
             showMenu ? ' rotate-180' : '',
-            theme == 'dark' ? '[&>path]:stroke-gray-100' : ''
+            theme == 'dark' ? '[&>path]:stroke-gray-ui-100' : ''
           )}
         />
       </div>
